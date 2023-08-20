@@ -54,7 +54,7 @@ class TestPerson:
         sys.stdout = captured_out
         Person(job="Benevolent dictator for life")
         sys.stdout = sys.__stdout__
-        assert(captured_out.getvalue() == "Job must be in list of approved jobs.\n")
+        assert(captured_out.getvalue() == "Job must be in list of approved jobs.")
 
     def test_job_in_list(self):
         '''saves job if in job list.'''
